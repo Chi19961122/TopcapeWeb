@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopCape</title>
+    <link rel="stylesheet" type="text/css" href="./00-firstpage.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./Topbutton.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <script src="./00-firstpage.js"></script>
+    <script src="./TopButton.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- skrollr -->
+    <script src="../skrollr.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+    <div id="back-to-top-btn" onclick="topFunction()">
+        <div>
+            <i class="gg-chevron-up"></i>
+        </div>
+        <p>TOP</p>
+    </div>
+
+
+    <!-- style="padding-top: 45px;" -->
+    <!-- 導覽列 -->
+    <div class="header">
+        <a class="logo" href="./00-firstpage.html">
+            <h1>TopCape</h1>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="./01-About.html">關於我們<span>About</span></a></li>
+                <li class="item"><a href="./02-Service.html">服務項目<span>Service</span></a></li>
+                <li class="item"><a href="./03-Project.html">專案實績<span>Projects</span></a></li>
+                <li class="item"><a href="./04-Contact.html">聯絡我們<span>Contact</span></a></li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/topcape.tw" target="_blank">
+                        <img src="../開譜-圖片/導覽列/computer-icons-facebook-logo-clip-art-css-sprites-eafe7075629b6b48ef993e586be14c70.png"
+                            alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- banner -->
+    <div class="banner">
+        <h1 class="slideshow_h1"> &emsp;跟<br> &emsp;著<br> &emsp;我<br> &emsp;們<br>認的<br>識腳<br> 地步 <br>方&nbsp&nbsp
+            <br>。
+            &nbsp&nbsp
+        </h1>
+        <!-- 輪播圖 -->
+        <div class="slideshow">
+            <div class="slide__item fade">
+                <a href="#">
+                    <img src="../開譜-圖片/輪播圖/勝利新村-台北展.jpg">
+                </a>
+            </div>
+            <!-- <div class="slide__item fade">
+                <a href="#">
+                    <img src="../開譜-圖片/輪播圖/潮州戲曲.jpg">
+                </a>
+            </div> -->
+            <div class="slide__item fade">
+                <a href="#">
+                    <img src="../開譜-圖片/輪播圖/秋書醒.jpg">
+                </a>
+            </div>
+            <div class="slide__item fade">
+                <a href="#">
+                    <img src="../開譜-圖片/輪播圖/秋書醒2.jpg">
+                </a>
+            </div>
+        </div>
+        <!-- 圓點 -->
+        <div class="slide__dot">
+            <div class="dot" data-value="1"></div>
+            <div class="dot" data-value="2"></div>
+            <div class="dot" data-value="3"></div>
+
+        </div>
+    </div>
+
+
+    <!--  About   -->
+    <div class="about section" style="padding-top: 45px;" data-200="opacity:0;" data-900="opacity:1;">
+        <div class="wrap">
+            <div class="about_item">
+                <div class="left_block">
+                    <div class="word">
+                        <h3 class="About_h3_title"><span>ABOUT</span></h3>
+                        <h4 class="About_h4_title">從田野汲取城鄉創生的意念</h4>
+                        <p>開譜國際TopCape成立於2013年，成員多來自南臺灣，對於土地的熱情促使我們聚在一起，我們有遠大的抱負，想用文化創意觸發地方的城鄉再生、帶動產業的永續發展，所以我們上山下海、深入城鄉，浸泡田野、挖掘在地符號，讓原本就存在於地方的特色得以被彰顯。
+                        </p>
+                        <div class="viewmore_button">
+                            <a class="viewmore_item" href="./01-About.html">
+                                <span>VEIW MORE</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right_block">
+                    <a href="./01-About.html">
+                        <img class="pic_block" src="../開譜-圖片/首頁/about.jpg" alt="">
+                    </a>
+                    <!-- <div class="pic_block" style="background-image: url(../開譜-圖片/首頁/about.jpg)">
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Service -->
+    <div class="Service section" style="padding-top: 45px;" data-1100="opacity:0;" data-1800="opacity:1;">
+        <!-- 文字 -->
+        <div class="wrap_Service">
+            <div class="Service_container">
+                <div class="service_body">
+                    <div class="service_head">
+                        <a href="./02-Service.html">
+                            <div class="title">
+                                <div class="title_1">SERVICE</div>
+                                <div class="title_2">文化創意作為城鄉治理的策略</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 背景圖 -->
+                    <a class="top" href="./02-Service.html"
+                        style="background-image: url(../開譜-圖片/首頁/service/產業行銷.jpg) ;">
+                        <div class="service_body_div ">
+                            <p class="service_body_p">產業行銷</p>
+                        </div>
+                    </a>
+                    <a class="top" href="./02-Service.html"
+                        style="background-image: url(../開譜-圖片/首頁/service/文化創意.jpg) ;">
+                        <div class="service_body_div ">
+                            <p class="service_body_p">文化創意</p>
+                        </div>
+                    </a>
+                    <a class="button" href="./02-Service.html"
+                        style="background-image: url(../開譜-圖片/首頁/service/城鄉育成.jpg) ;" \>
+                        <div class="service_body_div">
+                            <p class="service_body_p">城鄉育成</p>
+                        </div>
+                    </a>
+                    <a class="button" href="./02-Service.html"
+                        style="background-image: url(../開譜-圖片/首頁/service/地域創新.jpg) ;">
+                        <div class="service_body_div">
+                            <p class="service_body_p">地域創新</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skrollr初始化 -->
+    <script type="text/javascript">
+        var s = skrollr.init();//初始化
+    </script>
+
+
+
+
+    <!-- project -->
+    <div class="project section" style="padding-top: 45px;padding-bottom: 60px;">
+        <!-- 標題文字區塊 -->
+        <div class="project_title" data-2000="opacity:0;" data-2500="opacity:1;">
+            <div class="project_title_1">
+                <a href="./03-Project.html" style="text-decoration: none;">
+                    <h3 class="project_title_1-1"> Projects</h3>
+                </a>
+                <h4 class="project_title_1-2">城鄉治理的多元實踐</h4>
+            </div>
+            <p>大型節慶活動、主題展覽策劃、感質體驗活動、論壇展會策辦、文創商品研發、志工職能培訓，或是社區工作培力營，多元的行動策略讓城鄉治理更加有趣。</p>
+        </div>
+        <!-- 圖示區塊 -->
+        <div class="project_area_big">
+            <div class="project_area" data-2200="transform: translate(150px);opacity:0;"
+                data-2800="transform: translate(0px);opacity:1;">
+                <div class="project_area_img">
+                    <a href="./03-Project.html">
+                        <img src="../開譜-圖片/首頁/project/勝利星村.jpg" alt="">
+                        <p class="goproject "> Project</p>
+                    </a>
+                </div>
+                <div class="project_area_text">
+                    <h4>勝利星村 ✦ 超級聚星</h4>
+                    <h6>2021臺灣文博會｜屏東設計品牌館</h6>
+                    <p>
+                        展期：04.21 – 04.25 <br>
+                        地點：松山文創園區<br>
+                        <br>
+                        52間駐村品牌 × 52種生活品味 <br>
+                        The Ingredients of V.I.P Zone <br>
+                        <br>
+                        #勝利星村 #VictoryStar <br>
+                        #社會在走氣場要有 <br>
+                    </p>
+                </div>
+            </div>
+            <div class="project_area" data-3000="opacity:0;" data-3600="opacity:1;">
+                <div class="project_area_img">
+                    <a href="./03-Project.html">
+                        <img src="../開譜-圖片/首頁/project/田園饗宴.jpg" alt="">
+                        <p class="goproject "> Project</p>
+                    </a>
+                </div>
+                <div class="project_area_text">
+                    <h4>高雄｜田園饗宴×大地廚房</h4>
+                    <h6>從產地到餐桌 <br> 一起到田裡開飯</h6>
+                    <p>
+                        車行農村，路邊總會有蔬果攤車在車上掛著大大的「很慢」兩字，初時以為他們在提醒用路人開車注意安全，後來才意會到「很慢」兩個字其實來自台語的「現採」。
+
+                    </p>
+                    <p>
+                        現採意味著食材是新鮮的，現採也象徵著食材的在地性，想吃新鮮美味的蔬果不必遠求，路邊就能購買現採的食材。
+                    </p>
+                </div>
+            </div>
+
+            <div class="project_area" data-3400="transform: translate(-200px);opacity:0;"
+                data-4100="transform: translate(0px);opacity:1;">
+                <div class="project_area_img">
+                    <a href="./03-Project.html">
+                        <img src="../開譜-圖片/首頁/project/穿越阿緱.jpg" alt="">
+                        <p class="goproject "> Project</p>
+                    </a>
+                </div>
+                <div class="project_area_text">
+                    <h4>穿越阿緱－在街區與回憶之間</h4>
+                    <h6>屏東市百年街廓藏寶圖</h6>
+                    <p>
+                        屏東市，有沒有讓你感動的記憶？
+                        屏東公園內留存神社前的小橋流水依舊
+                        屏東的空軍宿舍群是當前占地最大的日式木造眷村
+                        而這裡，有一座「城中城」，是你暫且未曾想起的過去。
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="project_area">
+                <div class="project_area_img" data-4000="transform: translate(200px);opacity:0;"
+                    data-4800="transform: translate(0px);opacity:1;">
+                    <a href="./03-Project.html">
+                        <img src="../開譜-圖片/首頁/project/Frontier .jpg" alt="">
+                        <p class="goproject "> Project</p>
+                    </a>
+                </div>
+                <div class="project_area_text">
+                    <h4>Frontiers_公路旅行<br> 他的舒適圈，我的新境界</h4>
+                    <h6>劉馬力 × Ryan Libre 插畫攝影聯展</h6>
+                    <p>
+                        Frontier 直譯為「邊疆、邊境、邊界」，也是舒適圈的反義詞。
+                        <br>
+                        <br>
+                        在美國最初這個名詞的誕生，是指十八世紀末的西部大拓荒，牛仔、槍手與淘金客前往政府與祖先未開拓、未知的領域探險，也是充滿不確定性與非舒適圈的他方。
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- 資訊區 -->
+            <nav class="footer__secondaryNav">
+                <a href="./00-firstpage.html">
+                    <h1 class="footer__secondaryNav_h1">TopCape</h1>
+                </a>
+                <p class="footer__secondaryNav_p">
+                    <span>營業資訊</span> <br><br>
+                    週一至週五 09:00-18:30 <br><br>
+                    90062 <br>
+                    屏東縣屏東市信義路149號2F <br>
+                    <br>
+                    08-7665689（代表號） <br>
+                    service@topcape.com.tw <br>
+                </p>
+            </nav>
+            <!-- 選單區 -->
+            <nav class="footer__primaruNav">
+                <dl class="footer__primaruNav_dl">
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./01-About.html">關於我們</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./02-Service.html">服務項目</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./03-Project.html">專案實績</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./04-Contact.html">聯絡我們</a>
+                    </dd>
+                </dl>
+            </nav>
+            <!-- facebook -->
+            <div class="fb-page" data-href="https://www.facebook.com/topcape.tw" data-tabs="timeline" data-width="340"
+                data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/topcape.tw" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/topcape.tw">開譜國際TopCape</a></blockquote>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+    <div class="footer__bottomNav">
+        <p class="footer__copyright">Copyright 2023 IanFeng Inc. All rights reserved</p>
+    </div>
+
+
+</body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
+    nonce="TFpUkZga"></script>
+
+
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css">
+
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./03-project.css">
+    <link rel="stylesheet" href="./Topbutton.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <!-- <script src="./00-firstpage.js"></script> -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./03-project.js"></script>
+    <script src="./TopButton.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- skrollr -->
+    <script src="../skrollr.js"></script>
+
+    <!-- PhotoSwipe -->
+    <script src="./PhotoSwipe-master/PhotoSwipe-master/dist/umd/photoswipe.umd.min.js"></script>
+    <script src="./PhotoSwipe-master/PhotoSwipe-master/dist/umd/photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="./PhotoSwipe-master/PhotoSwipe-master/dist/photoswipe.css">
+
+</head>
+
+<body style="padding-top: 45px;">
+    
+    <!-- Back to top button -->
+    <div id="back-to-top-btn" onclick="topFunction()">
+        <div>
+            <i class="gg-chevron-up"></i>
+        </div>
+        <p>TOP</p>
+    </div>
+
+
+    <!-- 導覽列 -->
+    <div class="header">
+        <a class="logo" href="./00-firstpage.html">
+            <h1>TopCape</h1>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="./01-About.html">關於我們<span>About</span></a></li>
+                <li class="item"><a href="./02-Service.html">服務項目<span>Service</span></a></li>
+                <li class="item"><a href="./03-Project.html">專案實績<span>Projects</span></a></li>
+                <li class="item"><a href="./04-Contact.html">聯絡我們<span>Contact</span></a></li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/topcape.tw" >
+                        <img src="../開譜-圖片/導覽列/computer-icons-facebook-logo-clip-art-css-sprites-eafe7075629b6b48ef993e586be14c70.png"
+                            alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- project -->
+    <!-- banner -->
+    <div class="project_banner">
+        <!-- 透明區塊 -->
+        <div class="project_banner_wrap">
+            <!-- 文字 -->
+            <div class="banner_text">
+                <p class="banner_text_titleEN">project</p>
+                <p class="banner_text_title"> <br> 城鄉治理的實踐旅程</p>
+                <div class="banner_text_read">
+                    <p>「使夢想成真的秘訣，可以濃縮為四個C：好奇、信心、勇氣以及一致性。其中最重要的就是信心，如果你相信一件事，就要全面地、絕對地、毫無懷疑地去深信它。」
+                        <br><br>
+                        如同用奇幻魔法帶給全世界歡樂的華特・迪士尼所言，我們實踐城鄉治理的秘訣也在保持好奇心、信念隨行、勇氣加持、秉持初衷。
+                    </p>
+                    <p>“The secret of making dreams come true can be summarized in four C’s. They are curiosity,
+                        confidence, courage and constancy, and the greatest of these is confidence. When you believe a
+                        thing, believe it all the way, implicitly and unquestionably.”
+                        <br>
+                        －　WALT D. DISNEY
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div class="project-articleContainer">
+        <!-- btn -->
+        <ul class="myBtnContainer">
+            <li class="btn active" onclick="filterSelection('all')">
+                <a href="#2" role="button">All</a>
+            </li>
+            <li class="btn" onclick="filterSelection('exhibition')">
+                <a href="#2" role="button">展覽策劃</a>
+            </li>
+            <li class="btn" onclick="filterSelection('experience')">
+                <a href="#2" role="button">感質體驗</a>
+            </li>
+            <li class="btn" onclick="filterSelection('marketing')">
+                <a href="#2" role="button">整合行銷</a>
+            </li>
+            <li class="btn" onclick="filterSelection('Cultural')">
+                <a href="#2" role="button">文創開發</a>
+            </li>
+        </ul>
+
+        <!-- box的Container -->
+        <div class="project-articleWrapper">
+            <!-- box -->
+            <article id="gallery" class="project-article column exhibition my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/勝利新村.jpg" data-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/勝利新村.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">勝利星村 ✦ 超級聚星</p>
+                        <p class="project-article__title">2021臺灣文博會｜屏東設計品牌館</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column  marketing my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/勝利星村・浪漫有春.jpg" data-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/勝利星村・浪漫有春.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">勝利星村・浪漫有春</p>
+                        <p class="project-article__title">花藝 / 文創 / 屏東走春</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column experience my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/戲曲樂球．漫步潮州.jpg" data-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/戲曲樂球．漫步潮州.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">戲曲樂球．漫步潮州</p>
+                        <p class="project-article__title">復古市集</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column marketing my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/開箱埋沒的老記憶.jpg" d ata-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/開箱埋沒的老記憶.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">開箱埋沒的老記憶</p>
+                        <p class="project-article__title">屏東縣國家文化記憶庫照片徵件</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column marketing my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/花現鼠光.jpg" data- pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/花現鼠光.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">花現鼠光</p>
+                        <p class="project-article__title">2021臺灣文博會｜屏東設計品牌館</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column marketing Cultural my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/穿越阿緱－在街區與回憶之間.j
+                    pg" data-pswp-width="1669" data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/穿越阿緱－在街區與回憶之間.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">穿越阿緱－在街區與回憶之間</p>
+                        <p class="project-article__title">屏東市百年街廓藏寶圖</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column experience my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/秋．書醒.jpg" data- pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/秋．書醒.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">秋．書醒</p>
+                        <p class="project-article__title">2019閱讀市集</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column exhibition my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/三代同堂，綠樹成蔭.jpg" data-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/三代同堂，綠樹成蔭.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">三代同堂，綠樹成蔭</p>
+                        <p class="project-article__title">跨世代眷村歷史記憶展</p>
+                    </a>
+                
+
+            </article>
+            <!-- box -->
+            <article id="gallery" class="project-article column exhibition my-gallery">
+            
+                    <a class="project-article__link" href="../開譜-圖片/project/Frontiers.jpg" data-pswp-width="1669"
+                        data-pswp-height="2500" >
+                        <div class="project-article__img">
+                            <img class="js-object-fit" src="../開譜-圖片/project/Frontiers.jpg" alt="">
+                        </div>
+                        <p class="project-article__name">Frontiers｜公路旅行</p>
+                        <p class="project-article__title">劉馬力 × RYAN LIBRE 插畫攝影聯展</p>
+                    </a>
+                
+
+            </article>
+        </div>
+    </div>
+
+
+
+
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- 資訊區 -->
+            <nav class="footer__secondaryNav">
+                <a href="./00-firstpage.html">
+                    <h1 class="footer__secondaryNav_h1">TopCape</h1>
+                </a>
+                <p class="footer__secondaryNav_p">
+                    <span>營業資訊</span> <br><br>
+                    週一至週五 09:00-18:30 <br><br>
+                    90062 <br>
+                    屏東縣屏東市信義路149號2F <br>
+                    <br>
+                    08-7665689（代表號） <br>
+                    service@topcape.com.tw <br>
+                </p>
+            </nav>
+            <!-- 選單區 -->
+            <nav class="footer__primaruNav">
+                <dl class="footer__primaruNav_dl">
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./01-About.html">關於我們</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./02-Service.html">服務項目</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./03-Project.html">專案實績</a>
+                    </dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./04-Contact.html">聯絡我們</a>
+                    </dd>
+                </dl>
+            </nav>
+            <!-- facebook -->
+            <div class="fb-page" data-href="https://www.facebook.com/topcape.tw" data-tabs="timeline" data-width=""
+                data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/topcape.tw" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/topcape.tw">開譜國際TopCape</a></blockquote>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottomNav">
+        <p class="footer__copyright">Copyright 2023 IanFeng Inc. All rights reserved</p>
+    </div>
+    <!-- skrollr初始化 -->
+    <script type="text/javascript">
+        var s = skrollr.init();//初始化
+    </script>
+    <!--PhotoSwipe  -->
+    <script type="text/javascript">
+        var lightbox = new PhotoSwipeLightbox({
+            gallery: '.project-article',
+            children: 'a',
+            // dynamic import is not supported in UMD version
+            pswpModule: PhotoSwipe
+        });
+        lightbox.init();
+    </script>
+
+</body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
+    nonce="b0bjvlfe"></script>
+
+
+
+</html>

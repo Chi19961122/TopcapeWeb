@@ -1,0 +1,107 @@
+* {
+    /* background-color: black; */
+    margin: 0%; 
+    padding: 0%;
+    /* border: 1px solid black; */
+    font-family: 'Noto Serif TC', serif; 
+}
+/* Header */
+.header{
+    background-color: #FFFFFF; 
+    display: flex;
+    width: 100%;
+    position: fixed; /* 設定header置頂 */
+    z-index: 1; /* 顯示順序 */
+    /* border: 1px solid black; */
+    top: 0px;
+    left: 0px;
+    z-index: 99 ;
+    /* border-bottom: 3px solid black; */
+    box-shadow: 0px 2px 0px 0px #abb1b15a;
+    height: 62px;
+}
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /*  .logo 向左靠齐 */
+  padding: 0px 0px 0px 20px; /*  .logo 不要靠齊左邊 */
+  text-decoration: none;
+}
+.logo h1{
+  color: black;
+  margin: 0;
+  font-size: 28px; 
+  font-weight: 800; 
+  transition-duration:0.3s ;
+  transition-timing-function:ease-out ;
+}
+
+.logo h1:hover{
+  color: #198b7f;
+  opacity: 0.8;
+}
+
+
+/* 導覽列 */
+.navbar {
+  float: right; /* 讓nav在右邊 */
+  padding: 0px !important;
+  }
+  
+  nav ul {
+    list-style: none; 
+    /* 讓ul li 水平的方式 */
+    /* 1.取消預設ul陳列方式 */
+    /* 2.li 使用float或display ; */
+    position: relative;
+ 
+    margin-bottom: 0rem;
+    /* 取消boost的原設定 */
+    margin-top: 0rem;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 10px 30px ; 
+    font-size: 15px; 
+    font-weight: 500; 
+    letter-spacing: 2px;
+    position: relative;
+    right: 50px;
+    
+  }
+  
+  nav a {
+    color: black; 
+    text-decoration: none; /* 取消導覽項目文字的底線 */
+    text-align: center; /* 文字都置中對齊 */
+  }
+  
+  .header nav ul li a span{
+    display: block; /* 設定元素為 block 類型 */
+    font-weight: 400; /* 設定字體粗細 */
+    font-size: .7rem; /* 設定字體大小 */
+}
+
+
+  nav ul .item:hover {
+    border-bottom:4px solid #8B81C3;
+  }
+
+
+/* facebook icon */
+nav ul .icon{
+  padding: 0px 20px 0px 0px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 20%;
+}
+nav ul li a img{
+  /* width: 20px; */
+  height: 30px;
+
+}
+
+

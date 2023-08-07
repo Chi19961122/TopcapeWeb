@@ -1,0 +1,67 @@
+/* Top button */
+#back-to-top-btn {
+    display: none; /* 一開始先隱藏 */
+    position: fixed; /* 固定位置 */
+    bottom: 20px; /* 距離底部 20 像素 */
+    right: 20px; /* 距離右側 20 像素 */
+    z-index: 99; /* 設置層級 */
+    border: none;
+    outline: none;
+    /* background-color: white; */
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    /* border: 1px solid black; */
+    /* border-radius: 10%; */
+    font-size: 20px;
+    font-weight: 800;
+    /* box-shadow: 1px 2px 0px 0px #abb1b15a;; */
+    /* opacity: 1; */
+  
+    transition-duration: 0.8s ;
+    transition-timing-function:ease-out ;
+  }
+  #back-to-top-btn div{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+  }
+  #back-to-top-btn p{
+    display: inline;
+    text-align: center;
+    position: relative;
+    /* top: 80%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%) */
+  }
+  #back-to-top-btn:hover{
+    /* background-color: #000000; */
+    /* opacity: 0.5; */
+    color: #f7b604;
+  }
+  .gg-chevron-up {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+   }
+   
+   .gg-chevron-up::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    left: 4px;
+    bottom: 2px
+   } 
+  

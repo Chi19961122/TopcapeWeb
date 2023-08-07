@@ -1,0 +1,581 @@
+/* ----------全域設定---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif TC', serif;
+
+
+  /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+
+
+.div {
+  display: block;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  /* 相對定位 */
+
+}
+
+.slideshow_h1 {
+  /* background-color: #198b80e2; */
+  color: #FFFFFB;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 35px;
+  text-shadow: -1px 1px 0 black;
+  top: 45%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 15px 50px;
+  margin: 0;
+}
+
+
+/* ----------輪播圖---------- */
+.slide__item img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  /* 設定圖片視窗高，等比例縮放，太多的其餘放棄 */
+  /* position: relative; */
+}
+
+.slide__dot {
+  /* 利用絕對定位，將dot控制在圖片區塊中的底部 */
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.dot {
+  cursor: pointer;
+  /* 設置滑鼠游標樣式為手指 */
+  height: 10px;
+  /* 設置高度為 15 像素 */
+  width: 10px;
+  /* 設置寬度為 15 像素 */
+  margin: 0 10px;
+  /* 設置左右外邊距為 2 像素，上下外邊距為 0 */
+  background-color: #FFFFFB;
+  /* 設置背景顏色為淺灰色 */
+  border-radius: 50%;
+  /* 設置邊框圓角半徑為 50% */
+  display: inline-block;
+  /* 將元素設置為行內區塊元素 */
+  transition: background-color 2s ease;
+  /* 設置背景顏色變化的過渡效果，耗時 0.6 秒，緩和函數為 ease */
+}
+
+
+.active,
+.dot:hover {
+  background-color: #555555da;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+/* ----------about---------- */
+.section {
+  height: 100vh;
+  /* 設定整個about版面是可視區域 */
+  background-color: white;
+}
+
+.wrap {
+  /* 設定版型 */
+  height: 100%;
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.about_item {
+  background-color: white;
+  /* 設定版型 */
+  height: 100%;
+  width: 100%;
+  margin: 0px -20px;
+  /* 排版垂直置中 */
+  display: flex;
+  align-items: center;
+}
+
+.left_block {
+
+  /* 設定版型 */
+  height: 100%;
+  width: 50%;
+  padding: 0px 100px 0px 000px;
+  /* 排版垂直置中並換行 */
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-wrap: wrap;
+
+}
+
+.right_block {
+  /* 設定版型 */
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+
+}
+
+.pic_block {
+  /* background-color: blue; */
+  /* 設定版型 */
+  /* height: 100%; */
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.2s ;
+  transition-timing-function: ease-out;
+}
+
+.pic_block:hover {
+  background-color: #191919;
+  filter: brightness(75%);
+}
+
+
+.About_h3_title {
+  /* 設定字體樣式 */
+  color: #198b7f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  /* 設定區塊大小 */
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.About_h4_title {
+  /* 設定字體樣式 */
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  /* 設定區塊大小 */
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.word p {
+  /* 設定字體樣式 */
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.9;
+  /* 設定區塊大小 */
+  display: block;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.viewmore_button {
+  /* 設定區塊大小 */
+  display: block;
+  padding: 20px 20px 5px 0px;
+  display: flex;
+}
+
+.viewmore_button a {
+  /* 超連結樣式 */
+  text-decoration: none;
+  /* 設定區塊樣式與位置 */
+  position: relative;
+  display: inline-block;
+  border: 1px solid #191919;
+  max-width: 100%;
+  min-width: 240px;
+  padding: 15px 30px;
+  border-radius: 2px;
+
+  /* 設定文字與箭頭水平置中與垂直置中 */
+  display: flex;
+  justify-content: center;
+  /*水平置中*/
+  align-items: center;
+  /*垂直置中*/
+  /* 設定文字樣式 */
+  letter-spacing: 1px;
+  color: #191919;
+  font-size: 1rem;
+  ;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  transition-duration: 0.3s ;
+  transition-timing-function: ease-out;
+}
+
+.viewmore_item svg {
+  position: absolute;
+  right: 10px;
+}
+
+.viewmore_button a:hover {
+  background-color: #8B81C3;
+  color: #FFFFFB;
+}
+
+
+/* ----------Service---------- */
+
+.Service {
+  height: 100vh;
+  /* 設定整個Service版面是可視區域 */
+  /* background-color: yellowgreen; */
+}
+
+.wrap_Service {
+  /* 設定版型 */
+  height: 100%;
+  width: 100%;
+}
+
+.Service_container {
+  /* background-color: rgb(110, 110, 2); */
+  /* 設定版型 */
+  height: 100%;
+  width: 100%;
+  /* 讓左右(service_head、service_body)區塊設定flex排版 */
+  display: flex;
+  position: relative;
+}
+
+.service_head {
+  /* background-color: #fdfdfd81; */
+  /* 設定版型 */
+  /* height: 20%;
+  width: 50%; */
+  /* 設定位 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 設文字樣式 */
+  padding: 50px 0 50px 0px;
+  text-align: center;
+
+}
+
+.service_body {
+  /* background-color: lightskyblue; */
+  /* 設定版型 */
+  height: 100%;
+  width: 100%;
+
+  /* a標籤排版 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Service_body */
+.service_body .top {
+  /* 超連結樣式 */
+  text-decoration: none;
+  /* 設定版型 */
+  height: 50%;
+  width: 50%;
+  /* 設定區塊樣式與位置 */
+  /* 設定背景圖片 */
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  /* 文字排版 */
+  display: flex;
+  align-items: flex-start;
+}
+
+.service_body .button {
+  /* 超連結樣式 */
+  text-decoration: none;
+  /* 設定版型 */
+  height: 50%;
+  width: 50%;
+  /* 設定區塊樣式與位置 */
+  /* border: 3px solid #FFFFFB; */
+  /* 設定背景圖片 */
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  /* 文字排版 */
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+.service_body_div {
+  /* border: 3px solid black; */
+  background-color: #191919a2;
+  /* 設定版型 */
+  width: 25%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* 文字樣式 */
+  color: #FFFFFB;
+  text-align: center;
+  font-size: 1.5rem;
+  ;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+.service_body_p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service_head a {
+  text-decoration: none;
+}
+
+.title {
+  /* background-color: #198b805f; */
+  padding: 0px;
+  color: #FFFFFB;
+  transition-duration: 0.2s ;
+  transition-timing-function: ease-out;
+}
+
+.title_1 {
+  /* 設定字體 */
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 10px;
+  /* 設定區塊 */
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+.title_2 {
+  /* 設定字體樣式 */
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  /* 設定區塊大小 */
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title:hover {
+  color: #198b7f;
+}
+
+
+/* ----------project---------- */
+
+.project {
+  height: auto;
+  /* background-color: yellowgreen; */
+  /*  */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1330px;
+}
+
+/* 標題文字區塊 */
+.project_title {
+  /* background-color: lightblue; */
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+.project_title_1 {
+  padding-bottom: 45px;
+  
+}
+
+.project_title_1 a{
+  transition-duration: 0.4s ;
+  transition-timing-function: ease-out;
+}
+.project_title_1 a:hover {
+  opacity: 0.5;
+}
+
+.project_title_1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200px;
+  margin: 30px 0 0 0;
+  background: #000;
+}
+
+.project_title_1-1 {
+  font-size: 40px;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /* font-family: 微軟正黑體,sans-serif; */
+  padding-bottom: 10px;
+  color: #198b7f;
+}
+
+.project_title_1-2 {
+  font-size: 35px;
+  letter-spacing: 0.2rem;
+  font-weight: 550;
+  /* font-family: 微軟正黑體,sans-serif; */
+}
+
+.project_title p {
+  font-size: 1rem;
+  line-height: 1.8;
+  width: 700px;
+}
+
+/* ---圖示區塊--- */
+/* flex-direction: row-reverse; 左右相反 */
+.project_area_big{
+position: relative;
+}
+.project_area {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 80px;
+  width: 100%;
+  /* height: 500px; */
+  position: relative;
+
+}
+
+.project_area_img {
+  margin-right: 20px;
+  /* padding-bottom:0px ; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: black; */
+  
+}
+
+.project_area_img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* background: #aaa; */
+  overflow: hidden;
+  /* background-size: cover; */
+  position: relative;
+}
+
+.project_area_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+
+}
+
+.project_area_img_black {
+  width: 100%;
+  background-color: #000;
+}
+
+.project_area_img:hover img {
+  transform: scale(1.2);
+  background-color: #191919;
+  filter: brightness(60%);
+}
+
+.goproject {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 50px;
+  color: #feda77;
+  /* color: #198b7f; */
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.project_area_img:hover .goproject {
+  opacity: 1;
+}
+
+.project_area_text {
+  width: 100%;
+  /* flex: 0 0 400px; */
+  padding-left: 40px;
+}
+
+.project_area_text h4 {
+  font-size: 25px;
+  letter-spacing: 0.2rem;
+  font-weight: 550;
+  /* font-family: 微軟正黑體,sans-serif; */
+}
+
+.project_area_text h6 {
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  font-weight: 550;
+  /* font-family: 微軟正黑體,sans-serif; */
+  padding-top: 10px;
+}
+
+.project_area_text p {
+  font-size: 1rem;
+  line-height: 2;
+  width: 90%;
+  padding-top: 30px;
+}
+
+.project_area:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+html{
+  height: 4000px;
+}
+body{ 
+  height: 4000px;
+  overflow: auto;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./04-Contact.css">
+    <link rel="stylesheet" href="./Topbutton.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <script src="./00-firstpage.js"></script>
+    <script src="./TopButton.js"></script>
+    <script src="./04-Contact.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+
+</head>
+
+<body style="padding-top: 45px;">
+
+
+    <!-- Back to top button -->
+    <div id="back-to-top-btn" onclick="topFunction()">
+        <div>
+            <i class="gg-chevron-up"></i>
+        </div>
+        <p>TOP</p>
+    </div>
+    <!-- 導覽列 -->
+    <div class="header">
+        <a class="logo" href="./00-firstpage.html">
+            <h1>TopCape</h1>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="./01-About.html">關於我們<span>About</span></a></li>
+                <li class="item"><a href="./02-Service.html">服務項目<span>Service</span></a></li>
+                <li class="item"><a href="./03-Project.html">專案實績<span>Projects</span></a></li>
+                <li class="item"><a href="./04-Contact.html">聯絡我們<span>Contact</span></a></li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/topcape.tw" target="_blank">
+                        <img src="../開譜-圖片/導覽列/computer-icons-facebook-logo-clip-art-css-sprites-eafe7075629b6b48ef993e586be14c70.png"
+                            alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Contact -->
+    <!-- banner -->
+    <div class="Contact_banner">
+        <!-- 透明區塊 -->
+        <div class="Contact_banner_wrap">
+            <!-- 文字 -->
+            <div class="banner_title">
+                <h1>聯絡我們</h1>
+                <p>Inquirement</p>
+                <br><br><br><br>
+                <p>請完整填寫您的相關資料、聯絡方式以及徵求合作的相關細節 <br>
+                    送出訊息後，我們會盡速與您聯繫，很高興有與您合作的機會。
+                </p>
+            </div>
+
+
+
+            <!-- 表單 -->
+            <form class="C_form" action="">
+                <dl class="c_form__item c_form__item_name">
+                    <dt class="c_form__title">姓名</dt>
+                    <dd class="c_form__required">必填</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="name" type="text" value maxlength="100" placeholder=""
+                            required>
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">稱謂</dt>
+                    <dd class="c_form__required">必填</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="sex" type="text" value maxlength="100" placeholder="先生/小姐"
+                            required>
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">電話</dt>
+                    <dd class="c_form__required">必填</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="Tel" type="tel" value maxlength="100"
+                            placeholder="例：08-7665689" required>
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">手機</dt>
+                    <dd class="c_form__any">任意</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="phone" type="tel" value maxlength="100"
+                            placeholder="例：0912345678">
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">信箱</dt>
+                    <dd class="c_form__required">必填</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="Email" type="email" value maxlength="100"
+                            placeholder="例：service@topcape.com.tw" required>
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">公司名稱</dt>
+                    <dd class="c_form__any">任意</dd>
+                    <dd class="c_form__inputArea">
+                        <input class="c_form__input" name="companyname" type="text" value maxlength="100">
+                    </dd>
+                </dl>
+                <dl class="c_form__item">
+                    <dt class="c_form__title">諮詢事項</dt>
+                    <dd class="c_form__required">必填</dd>
+                    <dd class="c_form__inputArea">
+                        <!-- <input class="c_form__input" name="thing" type="text" value maxlength="100"> -->
+                        <textarea class="c_form__input c_form__textarea" name="" id="" cols="30" rows="20"
+                            required></textarea>
+                    </dd>
+                </dl>
+                <div class="c_form__footer">
+                    <button  type="button" id="SweetAlert1" class="c_form__button">確認送出</button>
+                    <script>
+                        const SweetAlert1 = document.querySelector('#SweetAlert1')
+                        SweetAlert1.addEventListener('click', function () {
+                            Swal.fire(
+                                '成功送出',
+                                '我們會盡速與您聯繫，很高興有與您合作的機會',
+                                'success'
+                            )
+                        })
+                    </script>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- 資訊區 -->
+            <nav class="footer__secondaryNav">
+                <a href="./00-firstpage.html">
+                    <h1 class="footer__secondaryNav_h1">TopCape</h1>
+                </a>
+                <p class="footer__secondaryNav_p">
+                    <span>營業資訊</span> <br><br>
+                    週一至週五 09:00-18:30 <br><br>
+                    90062 <br>
+                    屏東縣屏東市信義路149號2F <br>
+                    <br>
+                    08-7665689（代表號） <br>
+                    service@topcape.com.tw <br>
+                </p>
+            </nav>
+            <!-- 選單區 -->
+            <nav class="footer__primaruNav">
+                <dl class="footer__primaruNav_dl">
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./01-About.html">關於我們</a></dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./02-Service.html">服務項目</a></dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./03-Project.html">專案實績</a></dd>
+                    <dd class="footer__primaruNav_dd"><a class="footer__contact" href="./04-Contact.html">聯絡我們</a></dd>
+                </dl>
+            </nav>
+            <!-- facebook -->
+            <div class="fb-page" data-href="https://www.facebook.com/topcape.tw" data-tabs="timeline" data-width=""
+                data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/topcape.tw" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/topcape.tw">開譜國際TopCape</a></blockquote>
+            </div>
+        </div>
+    </footer>
+    <div class="footer__bottomNav">
+        <p class="footer__copyright">Copyright 2023 IanFeng Inc. All rights reserved</p>
+    </div>
+</body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
+    nonce="b0bjvlfe"></script>
+
+</html>

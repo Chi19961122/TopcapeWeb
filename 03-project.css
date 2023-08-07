@@ -1,0 +1,187 @@
+/* ----------全域設定---------- */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+    font-family: 'Noto Serif TC', serif;
+}
+
+.div {
+    display: block;
+}
+
+/* ------ */
+/* ----------banner----------- */
+/* ------ */
+/* btn */
+.myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    padding: 0;
+    list-style: none;
+    margin-top: 100px;
+    position: relative;
+}
+
+.myBtnContainer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.btn {
+    flex: none;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.btn a {
+    text-decoration: none;
+    text-align: center;
+    /* background-color: #198b7f; */
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .2em;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+
+
+.btn.active a {
+    color: white;
+}
+
+.btn.active {
+    background-color: #198b7f;
+}
+
+
+.column {
+    display: none;
+    /* Hide columns by default */
+}
+
+.show {
+    display: block;
+}
+
+/* ------ */
+
+.project_banner {
+    padding-top: 1px;
+    position: relative;
+    /* border: 1px solid black; */
+    /* background-color: rgb(0, 41, 76) ; */
+    height: 100vh;
+    background-color: #198b7f;
+    /* background-color: #198b7f; */
+}
+
+.project_banner_wrap {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    /* background-color: rgba(236, 230, 230, 0.619); */
+}
+
+.banner_text {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: calc(50% + 8px);
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+
+}
+
+.banner_text_titleEN {
+    text-orientation: upright;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2;
+    color: #ffffff;
+    letter-spacing: .1em;
+
+}
+
+.banner_text_title {
+    font-size: 2rem;
+    line-height: 0.7;
+    letter-spacing: .2em;
+    font-weight: 600;
+    color: #000;
+}
+
+.banner_text_read {
+    margin-right: 40px;
+    font-size: 1.2rem;
+    line-height: 2.5;
+    letter-spacing: .1em;
+    /* text-orientation: upright; */
+}
+
+.banner_text_read>p+p {
+    margin-right: 2.1428571429em;
+}
+
+
+/* --- */
+/* ----body----- */
+/* --- */
+.project-articleContainer {
+    /* background-color: #198b7f; */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 200px;
+    padding-left: 200px;
+    width: 100%;
+}
+
+.project-articleWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    margin: 80px 0px;
+}
+
+.project-article__img {
+    margin-bottom: calc(20px - ((16px - 12px)/ 2));
+    text-align: center;
+}
+
+.project-article__img>img {
+    width: 100%;
+    /* height: 200px; */
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.project-article__name {
+    margin-bottom: calc(13px - ((16px - 12px)/ 2) - ((24px - 11px)/ 2));
+    font-size: 1.2rem;
+    line-height: 1.3333333333;
+    letter-spacing: .2em;
+    color: #000;
+}
+
+.project-article__title {
+    font-size: 1.1rem;
+    line-height: 2.1818181818;
+    letter-spacing: .2em;
+    color: #7e7e7e;
+}
+
+.project-article__link {
+    text-decoration: none;
+}
